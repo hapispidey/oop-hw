@@ -10,6 +10,7 @@ class Smartphone
     processor;
     ram;
     processor_name;
+    secret_mode;
 
 
     constructor(brand, model, os, storage, screen_size, battery, camera_resolution, processor, ram)
@@ -31,10 +32,12 @@ class Smartphone
         if(this.brand === "Apple")
             {
                 this.processor_name = "Apple";
+                this.secret_mode = "heat generator\n\*Automatically turn on after 30 minutes of usage.\nUSAGE: can use as iron, portable stove, central heat system in winter and other heat generating tools.";
             }
         else
             {
                 this.processor_name = "snapdragon";
+                this.secret_mode = "none";
             }
         
         console.log(`
@@ -47,6 +50,7 @@ class Smartphone
         Camera resolution > ${this.camera_resolution} MP
         Porcessor         > ${this.processor_name} ${this.processor}
         RAM               > ${this.ram} Gb
+        Secret mode       > ${this.secret_mode}
         `);
     }
 
